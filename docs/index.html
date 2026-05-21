@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Graph Standards Coverage</title>
+    <style>
+        :root {
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface-hover: #222633;
+            --border: #2a2e3d;
+            --text: #e4e6ed;
+            --text-muted: #8b8fa3;
+            --accent: #6c7ee1;
+            --accent-hover: #8090f0;
+            --green: #22c55e;
+            --green-bg: rgba(34, 197, 94, 0.12);
+            --red: #ef4444;
+            --red-bg: rgba(239, 68, 68, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        .header {
+            border-bottom: 1px solid var(--border);
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .header .subtitle {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .tab-group {
+            display: flex;
+            background: var(--surface);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .tab {
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+
+        .tab:hover { color: var(--text); background: var(--surface-hover); }
+        .tab.active { color: var(--text); background: var(--accent); }
+
+        .sort-btn {
+            padding: 8px 14px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            color: var(--text-muted);
+            border-radius: 8px;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+
+        .sort-btn:hover { color: var(--text); background: var(--surface-hover); }
+        .sort-btn.active { color: var(--accent); border-color: var(--accent); }
+
+        .main {
+            padding: 24px 32px;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        .stats {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px 20px;
+            min-width: 160px;
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+
+        .stat-value.green { color: var(--green); }
+        .stat-value.red { color: var(--red); }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 2px;
+        }
+
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        thead th {
+            background: var(--surface);
+            padding: 10px 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            white-space: nowrap;
+        }
+
+        thead th:first-child {
+            text-align: left;
+            min-width: 180px;
+            position: sticky;
+            left: 0;
+            z-index: 3;
+        }
+
+        thead th:nth-child(2) {
+            text-align: left;
+            min-width: 80px;
+        }
+
+        tbody tr {
+            transition: background 0.1s;
+        }
+
+        tbody tr:hover {
+            background: var(--surface-hover);
+        }
+
+        tbody tr:not(:last-child) td {
+            border-bottom: 1px solid var(--border);
+        }
+
+        td {
+            padding: 8px 12px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        td:first-child {
+            text-align: left;
+            font-weight: 500;
+            position: sticky;
+            left: 0;
+            background: var(--bg);
+            z-index: 1;
+        }
+
+        tbody tr:hover td:first-child {
+            background: var(--surface-hover);
+        }
+
+        td:nth-child(2) {
+            text-align: left;
+        }
+
+        .coverage-bar-cell {
+            min-width: 100px;
+        }
+
+        .coverage-bar-wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .coverage-bar {
+            flex: 1;
+            height: 6px;
+            background: var(--border);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .coverage-bar-fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+
+        .coverage-pct {
+            font-size: 12px;
+            font-weight: 600;
+            min-width: 36px;
+            text-align: right;
+        }
+
+        .cell-has {
+            background: var(--green-bg);
+            color: var(--green);
+            font-weight: 600;
+            font-size: 12px;
+            border-radius: 4px;
+            min-width: 48px;
+        }
+
+        .cell-none {
+            background: var(--red-bg);
+            color: rgba(239, 68, 68, 0.4);
+            font-size: 12px;
+        }
+
+        .framework-name {
+            font-size: 11px;
+            color: var(--text-muted);
+            font-weight: 400;
+            max-width: 240px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .legend {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+            align-items: center;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .legend-swatch {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+
+        .legend-swatch.has { background: var(--green-bg); border: 1px solid rgba(34, 197, 94, 0.3); }
+        .legend-swatch.none { background: var(--red-bg); border: 1px solid rgba(239, 68, 68, 0.15); }
+
+        .tooltip {
+            position: fixed;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 12px;
+            pointer-events: none;
+            z-index: 100;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            display: none;
+            max-width: 300px;
+        }
+
+        .tooltip-title { font-weight: 600; margin-bottom: 4px; }
+        .tooltip-detail { color: var(--text-muted); }
+
+        @media (max-width: 768px) {
+            .header { padding: 16px; }
+            .main { padding: 16px; }
+            .stat { min-width: 120px; padding: 12px 14px; }
+            .stat-value { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>Knowledge Graph Standards Coverage</h1>
+            <div class="subtitle">Academic standards coverage across U.S. states and grade levels</div>
+        </div>
+        <div class="controls">
+            <div class="tab-group" id="subject-tabs"></div>
+            <button class="sort-btn" id="sort-toggle" title="Sort by coverage">Sort: A-Z</button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="stats" id="stats"></div>
+        <div class="legend">
+            <div class="legend-item"><div class="legend-swatch has"></div> Has standards</div>
+            <div class="legend-item"><div class="legend-swatch none"></div> No standards</div>
+            <span style="margin-left: auto; font-size: 11px;" id="generated-at"></span>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <thead id="thead"></thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+    let DATA = null;
+    let currentSubject = null;
+    let sortMode = 'alpha'; // 'alpha' or 'coverage'
+
+    async function init() {
+        const resp = await fetch('data.json');
+        DATA = await resp.json();
+
+        document.getElementById('generated-at').textContent =
+            'Data as of ' + new Date(DATA.generatedAt).toLocaleDateString();
+
+        // Build subject tabs
+        const tabGroup = document.getElementById('subject-tabs');
+        DATA.subjects.forEach((subj, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'tab' + (i === 0 ? ' active' : '');
+            btn.textContent = subj;
+            btn.onclick = () => selectSubject(subj);
+            tabGroup.appendChild(btn);
+        });
+
+        // Sort toggle
+        document.getElementById('sort-toggle').onclick = toggleSort;
+
+        currentSubject = DATA.subjects[0];
+        render();
+    }
+
+    function selectSubject(subj) {
+        currentSubject = subj;
+        document.querySelectorAll('.tab').forEach(t => {
+            t.classList.toggle('active', t.textContent === subj);
+        });
+        render();
+    }
+
+    function toggleSort() {
+        sortMode = sortMode === 'alpha' ? 'coverage' : 'alpha';
+        const btn = document.getElementById('sort-toggle');
+        btn.textContent = sortMode === 'alpha' ? 'Sort: A-Z' : 'Sort: Coverage';
+        btn.classList.toggle('active', sortMode === 'coverage');
+        render();
+    }
+
+    function render() {
+        const coverage = DATA.coverage[currentSubject] || {};
+        const grades = DATA.gradeLevels;
+
+        // Build rows data
+        let rows = Object.entries(coverage).map(([state, info]) => {
+            const gradeCoverage = grades.map(g => info.grades[g] || 0);
+            const coveredCount = gradeCoverage.filter(c => c > 0).length;
+            const coveragePct = Math.round((coveredCount / grades.length) * 100);
+            return { state, info, gradeCoverage, coveredCount, coveragePct };
+        });
+
+        // All possible states (from any subject)
+        const allStates = new Set();
+        Object.values(DATA.coverage).forEach(subj => {
+            Object.keys(subj).forEach(s => allStates.add(s));
+        });
+
+        // Add missing states for this subject
+        allStates.forEach(s => {
+            if (!coverage[s]) {
+                rows.push({
+                    state: s,
+                    info: { frameworkName: 'No framework', totalStandards: 0, grades: {} },
+                    gradeCoverage: grades.map(() => 0),
+                    coveredCount: 0,
+                    coveragePct: 0,
+                });
+            }
+        });
+
+        // Sort
+        if (sortMode === 'coverage') {
+            rows.sort((a, b) => b.coveragePct - a.coveragePct || a.state.localeCompare(b.state));
+        } else {
+            rows.sort((a, b) => a.state.localeCompare(b.state));
+        }
+
+        // Filter out Multi-State (put it at top if present)
+        const multiState = rows.find(r => r.state === 'Multi-State');
+        rows = rows.filter(r => r.state !== 'Multi-State');
+        if (multiState) rows.unshift(multiState);
+
+        // Stats
+        const withCoverage = rows.filter(r => r.coveragePct > 0).length;
+        const totalStandards = rows.reduce((sum, r) => sum + r.info.totalStandards, 0);
+        const avgCoverage = rows.length > 0
+            ? Math.round(rows.reduce((sum, r) => sum + r.coveragePct, 0) / rows.length)
+            : 0;
+
+        document.getElementById('stats').innerHTML = `
+            <div class="stat">
+                <div class="stat-value">${rows.length}</div>
+                <div class="stat-label">Jurisdictions</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value green">${withCoverage}</div>
+                <div class="stat-label">With Coverage</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value ${rows.length - withCoverage > 0 ? 'red' : ''}">${rows.length - withCoverage}</div>
+                <div class="stat-label">No Coverage</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">${totalStandards.toLocaleString()}</div>
+                <div class="stat-label">Total Standards</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">${avgCoverage}%</div>
+                <div class="stat-label">Avg Grade Coverage</div>
+            </div>
+        `;
+
+        // Table header
+        document.getElementById('thead').innerHTML = `
+            <tr>
+                <th>State</th>
+                <th>Coverage</th>
+                ${grades.map(g => `<th>${g}</th>`).join('')}
+            </tr>
+        `;
+
+        // Table body
+        const tbody = document.getElementById('tbody');
+        tbody.innerHTML = rows.map(row => {
+            const barColor = row.coveragePct === 100 ? 'var(--green)'
+                : row.coveragePct > 0 ? 'var(--accent)'
+                : 'var(--red)';
+
+            return `<tr>
+                <td>
+                    <div>${row.state}</div>
+                    <div class="framework-name" title="${escapeHtml(row.info.frameworkName)}">${escapeHtml(row.info.frameworkName)}</div>
+                </td>
+                <td class="coverage-bar-cell">
+                    <div class="coverage-bar-wrap">
+                        <div class="coverage-bar">
+                            <div class="coverage-bar-fill" style="width:${row.coveragePct}%;background:${barColor}"></div>
+                        </div>
+                        <span class="coverage-pct" style="color:${barColor}">${row.coveragePct}%</span>
+                    </div>
+                </td>
+                ${row.gradeCoverage.map((count, i) => {
+                    if (count > 0) {
+                        return `<td class="cell-has" data-tip="${row.state} | Grade ${grades[i]} | ${count} standards">${count}</td>`;
+                    } else {
+                        return `<td class="cell-none" data-tip="${row.state} | Grade ${grades[i]} | No standards">&mdash;</td>`;
+                    }
+                }).join('')}
+            </tr>`;
+        }).join('');
+
+        // Tooltips
+        setupTooltips();
+    }
+
+    function escapeHtml(str) {
+        return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function setupTooltips() {
+        const tooltip = document.getElementById('tooltip');
+        document.querySelectorAll('[data-tip]').forEach(el => {
+            el.addEventListener('mouseenter', e => {
+                const parts = el.dataset.tip.split(' | ');
+                tooltip.innerHTML = `
+                    <div class="tooltip-title">${parts[0]}</div>
+                    <div class="tooltip-detail">${parts[1]}</div>
+                    <div class="tooltip-detail">${parts[2]}</div>
+                `;
+                tooltip.style.display = 'block';
+                positionTooltip(e);
+            });
+            el.addEventListener('mousemove', positionTooltip);
+            el.addEventListener('mouseleave', () => {
+                tooltip.style.display = 'none';
+            });
+        });
+    }
+
+    function positionTooltip(e) {
+        const tooltip = document.getElementById('tooltip');
+        let x = e.clientX + 12;
+        let y = e.clientY + 12;
+        if (x + 200 > window.innerWidth) x = e.clientX - 200;
+        if (y + 80 > window.innerHeight) y = e.clientY - 80;
+        tooltip.style.left = x + 'px';
+        tooltip.style.top = y + 'px';
+    }
+
+    init();
+    </script>
+</body>
+</html>

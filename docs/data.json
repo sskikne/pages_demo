@@ -1,0 +1,2015 @@
+{
+  "generatedAt": "2026-05-21T16:42:09Z",
+  "subjects": [
+    "English Language Arts",
+    "Mathematics",
+    "Science",
+    "Social Studies"
+  ],
+  "gradeLevels": [
+    "PK",
+    "K",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "coverage": {
+    "Social Studies": {
+      "New Hampshire": {
+        "frameworkName": "K-12 New Hampshire Social Studies Curriculum Framework",
+        "frameworkId": "00bcc689-c7a6-5ef4-ac09-c868f9e25a06",
+        "totalStandards": 339,
+        "grades": {
+          "5": 74,
+          "6": 74,
+          "9": 117,
+          "10": 117,
+          "11": 117,
+          "12": 117,
+          "K": 50,
+          "1": 50,
+          "2": 50,
+          "3": 77,
+          "4": 77,
+          "7": 65,
+          "8": 65
+        }
+      },
+      "North Carolina": {
+        "frameworkName": "North Carolina Standard Course of Study: Social Studies",
+        "frameworkId": "02575dee-30d0-50fd-b0e6-182da76f63a5",
+        "totalStandards": 501,
+        "grades": {
+          "6": 34,
+          "4": 36,
+          "9": 188,
+          "10": 188,
+          "11": 188,
+          "12": 188,
+          "2": 28,
+          "1": 33,
+          "7": 36,
+          "K": 32,
+          "8": 43,
+          "5": 41,
+          "3": 30
+        }
+      },
+      "Kentucky": {
+        "frameworkName": "Kentucky Academic Standards: Social Studies (2022)",
+        "frameworkId": "04153ba0-b351-599f-8bc7-41e63872cd50",
+        "totalStandards": 454,
+        "grades": {
+          "4": 31,
+          "5": 37,
+          "9": 130,
+          "10": 130,
+          "11": 130,
+          "12": 130,
+          "1": 33,
+          "2": 35,
+          "8": 51,
+          "6": 38,
+          "K": 30,
+          "3": 31,
+          "7": 38
+        }
+      },
+      "South Dakota": {
+        "frameworkName": "South Dakota Social Studies Content Standards (2015)",
+        "frameworkId": "0af917a0-966c-58cb-b3df-f6a4fb0f16d7",
+        "totalStandards": 320,
+        "grades": {
+          "9": 116,
+          "10": 116,
+          "11": 116,
+          "12": 116,
+          "3": 19,
+          "1": 13,
+          "6": 21,
+          "8": 45,
+          "5": 38,
+          "7": 24,
+          "2": 13,
+          "4": 22,
+          "K": 9
+        }
+      },
+      "New Jersey": {
+        "frameworkName": "2020 New Jersey Student Learning Standards for Social Studies",
+        "frameworkId": "118a6b3b-a3ac-56f8-ad18-e70559251aec",
+        "totalStandards": 530,
+        "grades": {
+          "9": 267,
+          "10": 267,
+          "11": 267,
+          "12": 267,
+          "6": 109,
+          "7": 109,
+          "8": 109,
+          "3": 100,
+          "4": 100,
+          "5": 100,
+          "K": 54,
+          "1": 54,
+          "2": 54
+        }
+      },
+      "Nevada": {
+        "frameworkName": "Nevada Academic Content Standards for Social Studies",
+        "frameworkId": "174ab9b1-127b-5684-b788-37952b3eca75",
+        "totalStandards": 425,
+        "grades": {
+          "3": 28,
+          "6": 121,
+          "7": 121,
+          "8": 121,
+          "2": 25,
+          "4": 33,
+          "9": 138,
+          "10": 138,
+          "11": 138,
+          "12": 138,
+          "1": 22,
+          "5": 39,
+          "K": 19
+        }
+      },
+      "Pennsylvania": {
+        "frameworkName": "Pennsylvania Academic Standards for History (2002)",
+        "frameworkId": "1a4b281e-333a-5860-99f6-fc4615bc56c4",
+        "totalStandards": 64,
+        "grades": {
+          "9": 12,
+          "6": 20,
+          "3": 16,
+          "12": 16
+        }
+      },
+      "Illinois": {
+        "frameworkName": "Illinois Learning Standards (ILS) for Social Science (2022)",
+        "frameworkId": "1b3da8f8-091b-587a-a4e3-8d0dccd5e3f5",
+        "totalStandards": 299,
+        "grades": {
+          "6": 71,
+          "7": 71,
+          "8": 71,
+          "4": 24,
+          "1": 18,
+          "K": 15,
+          "9": 106,
+          "10": 106,
+          "11": 106,
+          "12": 106,
+          "5": 25,
+          "2": 18,
+          "3": 22
+        }
+      },
+      "Rhode Island": {
+        "frameworkName": "Rhode Island Social Studies Standards (2023)",
+        "frameworkId": "1d115e63-6a2e-54ea-bbf6-f66a64c20164",
+        "totalStandards": 327,
+        "grades": {
+          "9": 167,
+          "10": 167,
+          "11": 167,
+          "12": 167,
+          "3": 25,
+          "1": 17,
+          "8": 21,
+          "4": 19,
+          "6": 16,
+          "2": 15,
+          "5": 18,
+          "K": 14,
+          "7": 15
+        }
+      },
+      "Alabama": {
+        "frameworkName": "Social Studies (2010)",
+        "frameworkId": "2168ecdb-a8f8-543c-8207-2fb14366aec5",
+        "totalStandards": 860,
+        "grades": {
+          "12": 285,
+          "3": 39,
+          "11": 243,
+          "5": 53,
+          "9": 232,
+          "6": 62,
+          "10": 242,
+          "4": 49,
+          "7": 75,
+          "K": 17,
+          "1": 33,
+          "8": 43,
+          "2": 30
+        }
+      },
+      "Wisconsin": {
+        "frameworkName": "Wisconsin Standards for Social Studies",
+        "frameworkId": "21d4fc4e-1c31-57bf-859a-b2251d86e030",
+        "totalStandards": 289,
+        "grades": {
+          "6": 99,
+          "7": 99,
+          "8": 99,
+          "3": 98,
+          "4": 98,
+          "5": 98,
+          "K": 98,
+          "1": 98,
+          "2": 98,
+          "9": 99,
+          "10": 99,
+          "11": 99,
+          "12": 99
+        }
+      },
+      "Michigan": {
+        "frameworkName": "Michigan K-12 Standards for Social Studies",
+        "frameworkId": "288bee17-c184-5697-a6bd-640f5952c45c",
+        "totalStandards": 669,
+        "grades": {
+          "9": 185,
+          "10": 185,
+          "11": 185,
+          "12": 185,
+          "1": 63,
+          "8": 79,
+          "5": 83,
+          "6": 90,
+          "7": 88,
+          "K": 52,
+          "2": 69,
+          "4": 82,
+          "3": 76
+        }
+      },
+      "Iowa": {
+        "frameworkName": "Iowa Core Social Studies",
+        "frameworkId": "2ca6308d-d1c9-5b21-8558-1a593dd01ea9",
+        "totalStandards": 647,
+        "grades": {
+          "5": 65,
+          "4": 67,
+          "2": 64,
+          "3": 69,
+          "9": 212,
+          "10": 212,
+          "11": 211,
+          "12": 211,
+          "K": 57,
+          "1": 63,
+          "6": 97,
+          "7": 101,
+          "8": 99
+        }
+      },
+      "California": {
+        "frameworkName": "History-Social Science Content Standards for California Public Schools",
+        "frameworkId": "352ab5d6-78d9-5a16-9e93-d6e698146836",
+        "totalStandards": 554,
+        "grades": {
+          "11": 87,
+          "12": 95,
+          "7": 75,
+          "K": 23,
+          "8": 83,
+          "6": 62,
+          "10": 62,
+          "2": 12,
+          "9": 14,
+          "5": 43,
+          "4": 32,
+          "3": 19,
+          "1": 17
+        }
+      },
+      "Massachusetts": {
+        "frameworkName": "Massachusetts Curriculum Framework for History and Social Studies",
+        "frameworkId": "37202aa5-2f61-5b1c-b43b-3a27ee472a62",
+        "totalStandards": 1649,
+        "grades": {
+          "9": 925,
+          "10": 925,
+          "11": 925,
+          "12": 925,
+          "5": 91,
+          "PK": 39,
+          "K": 51,
+          "7": 82,
+          "8": 97,
+          "3": 72,
+          "4": 93,
+          "1": 64,
+          "6": 98,
+          "2": 60
+        }
+      },
+      "Missouri": {
+        "frameworkName": "Missouri Learning Standards: Social Studies",
+        "frameworkId": "3769c8fe-095f-563f-8d1a-ef1a3be84a53",
+        "totalStandards": 645,
+        "grades": {
+          "9": 213,
+          "10": 213,
+          "11": 213,
+          "12": 213,
+          "6": 176,
+          "7": 176,
+          "8": 176,
+          "3": 55,
+          "5": 52,
+          "K": 26,
+          "2": 43,
+          "4": 51,
+          "1": 29
+        }
+      },
+      "Ohio": {
+        "frameworkName": "Ohio Learning Standards for Social Studies",
+        "frameworkId": "43ab4db0-5e29-5cd1-945a-eb2b46f8aaed",
+        "totalStandards": 286,
+        "grades": {
+          "9": 122,
+          "10": 122,
+          "11": 122,
+          "12": 122,
+          "4": 22,
+          "1": 14,
+          "3": 18,
+          "K": 12,
+          "7": 21,
+          "8": 26,
+          "5": 18,
+          "6": 16,
+          "2": 17
+        }
+      },
+      "Minnesota": {
+        "frameworkName": "Minnesota Social Studies (2011)",
+        "frameworkId": "43acc6d4-3c00-599e-a508-bb0695795b96",
+        "totalStandards": 692,
+        "grades": {
+          "9": 301,
+          "10": 301,
+          "11": 301,
+          "12": 301,
+          "5": 105,
+          "K": 79,
+          "1": 84,
+          "2": 84,
+          "3": 96,
+          "4": 92,
+          "6": 121,
+          "7": 121,
+          "8": 122
+        }
+      },
+      "Delaware": {
+        "frameworkName": "Delaware State Standards for Social Studies",
+        "frameworkId": "4c3cbca0-4d99-5dfc-bb04-a474653cc238",
+        "totalStandards": 0,
+        "grades": {}
+      },
+      "Kansas": {
+        "frameworkName": "Kansas History, Government, and Social Studies Standards",
+        "frameworkId": "53c546d3-0313-58de-a27e-54797cc74612",
+        "totalStandards": 350,
+        "grades": {
+          "3": 30,
+          "5": 50,
+          "K": 30,
+          "1": 30,
+          "2": 30,
+          "4": 30,
+          "6": 125,
+          "7": 125,
+          "8": 125,
+          "9": 200,
+          "10": 200,
+          "11": 200,
+          "12": 200
+        }
+      },
+      "North Dakota": {
+        "frameworkName": "North Dakota Social Studies Content Standards",
+        "frameworkId": "5fdd476d-0591-5666-9132-9848c4d1aae4",
+        "totalStandards": 416,
+        "grades": {
+          "6": 416,
+          "7": 416,
+          "8": 416,
+          "9": 416,
+          "10": 416,
+          "11": 416,
+          "12": 416
+        }
+      },
+      "Vermont": {
+        "frameworkName": "Vermont College, Career, and Civic Life C3 Framework for Social Studies State Standards",
+        "frameworkId": "67e30e49-2707-56c3-bbf2-165d188b54c1",
+        "totalStandards": 600,
+        "grades": {
+          "3": 152,
+          "4": 152,
+          "5": 152,
+          "6": 150,
+          "7": 150,
+          "8": 150,
+          "9": 150,
+          "10": 150,
+          "11": 150,
+          "12": 150,
+          "K": 150,
+          "1": 150,
+          "2": 150
+        }
+      },
+      "Washington, D.C.": {
+        "frameworkName": "Washington, D.C. Grades K-12 Social Studies Standards (2023)",
+        "frameworkId": "688c976d-ea5f-5ea5-b030-5a5be02320ca",
+        "totalStandards": 798,
+        "grades": {
+          "8": 67,
+          "9": 338,
+          "10": 338,
+          "11": 338,
+          "12": 338,
+          "5": 55,
+          "4": 54,
+          "7": 80,
+          "6": 68,
+          "3": 42,
+          "1": 35,
+          "2": 32,
+          "K": 27
+        }
+      }
+    },
+    "English Language Arts": {
+      "Montana": {
+        "frameworkName": "Montana Content Standards for English Language Arts and Literacy 2011",
+        "frameworkId": "02b47e1a-5aba-5bc6-b2dc-8b79ed1af72b",
+        "totalStandards": 1100,
+        "grades": {
+          "K": 104,
+          "11": 144,
+          "12": 144,
+          "2": 103,
+          "1": 113,
+          "6": 231,
+          "7": 227,
+          "8": 229,
+          "4": 119,
+          "5": 117,
+          "3": 122,
+          "9": 146,
+          "10": 146
+        }
+      },
+      "Washington, D.C.": {
+        "frameworkName": "Washington, D.C. Common Core Standards - English Language Arts",
+        "frameworkId": "0fc72947-2d59-5ae6-af38-c6ee61008e8e",
+        "totalStandards": 1100,
+        "grades": {
+          "3": 122,
+          "11": 145,
+          "12": 145,
+          "5": 117,
+          "9": 147,
+          "10": 147,
+          "1": 113,
+          "6": 151,
+          "4": 119,
+          "8": 150,
+          "K": 104,
+          "7": 148,
+          "2": 103
+        }
+      },
+      "Multi-State": {
+        "frameworkName": "Marco de los est\u00e1ndares del desarrollo aut\u00e9ntico del lenguaje espa\u00f1ol de WIDA (Marco DALE) ",
+        "frameworkId": "19632c2a-909c-5fbe-b5ed-2d691180a12c",
+        "totalStandards": 261,
+        "grades": {
+          "K": 42,
+          "6": 39,
+          "7": 39,
+          "8": 39,
+          "1": 39,
+          "9": 48,
+          "10": 48,
+          "11": 48,
+          "12": 48,
+          "4": 54,
+          "5": 54,
+          "2": 39,
+          "3": 39
+        }
+      },
+      "Oregon": {
+        "frameworkName": "Oregon English Language Arts and Literacy Standards (2019)",
+        "frameworkId": "1964aa98-f529-5419-bd31-7de17bd45163",
+        "totalStandards": 1136,
+        "grades": {
+          "1": 120,
+          "5": 118,
+          "K": 112,
+          "2": 119,
+          "3": 125,
+          "4": 120,
+          "6": 232,
+          "7": 229,
+          "8": 231,
+          "9": 147,
+          "10": 147,
+          "11": 144,
+          "12": 144
+        }
+      },
+      "Florida": {
+        "frameworkName": "English Language Arts (B.E.S.T.)",
+        "frameworkId": "221aef4a-d8f3-579e-9b6d-c721cd0ad059",
+        "totalStandards": 335,
+        "grades": {
+          "9": 34,
+          "6": 34,
+          "4": 32,
+          "2": 32,
+          "1": 34,
+          "5": 32,
+          "3": 32,
+          "10": 34,
+          "K": 31,
+          "7": 34,
+          "8": 34,
+          "11": 34,
+          "12": 34
+        }
+      },
+      "Kentucky": {
+        "frameworkName": "Kentucky Academic Standards: Reading and Writing (2019)",
+        "frameworkId": "2253d986-86db-549e-8201-f2062957a1f7",
+        "totalStandards": 841,
+        "grades": {
+          "4": 101,
+          "3": 107,
+          "6": 89,
+          "K": 103,
+          "5": 99,
+          "7": 87,
+          "1": 110,
+          "2": 103,
+          "8": 89,
+          "9": 87,
+          "10": 87,
+          "11": 86,
+          "12": 86
+        }
+      },
+      "Rhode Island": {
+        "frameworkName": "Rhode Island Core Standards for English Language Arts/Literacy (2021)",
+        "frameworkId": "26e5890a-61b1-539c-8e50-9712ae595d53",
+        "totalStandards": 1208,
+        "grades": {
+          "5": 124,
+          "9": 161,
+          "10": 161,
+          "K": 110,
+          "6": 261,
+          "1": 122,
+          "8": 261,
+          "4": 125,
+          "7": 262,
+          "11": 159,
+          "12": 159,
+          "3": 131,
+          "2": 112
+        }
+      },
+      "South Carolina": {
+        "frameworkName": "English Language Arts, K-12 (2024) South Carolina College And Career Ready Standards for English Language Arts ",
+        "frameworkId": "2958c115-70a7-5897-90d9-00e56a34343e",
+        "totalStandards": 1085,
+        "grades": {
+          "7": 69,
+          "9": 280,
+          "10": 280,
+          "11": 280,
+          "12": 280,
+          "2": 99,
+          "6": 70,
+          "4": 98,
+          "1": 104,
+          "5": 98,
+          "8": 70,
+          "K": 100,
+          "3": 97
+        }
+      },
+      "Illinois": {
+        "frameworkName": "Illinois Learning Standards (ILS) for English Language Arts (ELA)",
+        "frameworkId": "2ed8559c-9a7f-5249-8f8a-d096c8b3a2a8",
+        "totalStandards": 1099,
+        "grades": {
+          "6": 231,
+          "7": 228,
+          "8": 230,
+          "K": 104,
+          "3": 122,
+          "4": 119,
+          "11": 145,
+          "12": 145,
+          "1": 113,
+          "5": 117,
+          "2": 103,
+          "9": 147,
+          "10": 147
+        }
+      },
+      "South Dakota": {
+        "frameworkName": "South Dakota State Standards for English Language Arts and Literacy (2018)",
+        "frameworkId": "35518c74-701c-5f4c-b40e-f4a906ea6902",
+        "totalStandards": 1226,
+        "grades": {
+          "2": 120,
+          "4": 127,
+          "8": 257,
+          "1": 131,
+          "11": 147,
+          "12": 147,
+          "6": 246,
+          "7": 252,
+          "9": 152,
+          "10": 152,
+          "K": 111,
+          "3": 126,
+          "5": 129
+        }
+      },
+      "California": {
+        "frameworkName": "California Common Core State Standards - English Language Arts (2013)",
+        "frameworkId": "3b556a70-dff6-519e-877d-a0b6f16198e0",
+        "totalStandards": 1137,
+        "grades": {
+          "11": 149,
+          "12": 149,
+          "5": 119,
+          "7": 230,
+          "3": 125,
+          "6": 233,
+          "8": 232,
+          "2": 108,
+          "K": 110,
+          "9": 150,
+          "10": 150,
+          "4": 121,
+          "1": 119
+        }
+      },
+      "Louisiana": {
+        "frameworkName": "Louisiana Student Standards for English Language Arts",
+        "frameworkId": "42f9e712-69f5-5743-9cbb-3a5be508587d",
+        "totalStandards": 1100,
+        "grades": {
+          "11": 145,
+          "12": 145,
+          "6": 231,
+          "7": 227,
+          "8": 230,
+          "2": 103,
+          "9": 147,
+          "10": 147,
+          "4": 119,
+          "5": 117,
+          "1": 114,
+          "K": 104,
+          "3": 122
+        }
+      },
+      "Idaho": {
+        "frameworkName": "Idaho Content Standards English Language Arts/Literacy (2022)",
+        "frameworkId": "4576d361-d6ba-582d-83c6-1a03da799d11",
+        "totalStandards": 647,
+        "grades": {
+          "9": 60,
+          "10": 60,
+          "4": 56,
+          "3": 65,
+          "8": 54,
+          "11": 50,
+          "12": 50,
+          "2": 66,
+          "K": 62,
+          "6": 54,
+          "5": 55,
+          "7": 55,
+          "1": 70
+        }
+      },
+      "Massachusetts": {
+        "frameworkName": "Massachusetts Curriculum Framework for English Language Arts and Literacy",
+        "frameworkId": "478dc833-c900-5b27-8e68-0cdb81ae5fcc",
+        "totalStandards": 1235,
+        "grades": {
+          "7": 260,
+          "2": 110,
+          "K": 105,
+          "PK": 91,
+          "1": 116,
+          "4": 122,
+          "3": 128,
+          "5": 121,
+          "6": 259,
+          "8": 259,
+          "9": 159,
+          "10": 159,
+          "11": 157,
+          "12": 157
+        }
+      },
+      "Texas": {
+        "frameworkName": "Chapter 110. English Language Arts and Reading",
+        "frameworkId": "484e8bec-f989-599d-9686-ca13b8a59370",
+        "totalStandards": 1692,
+        "grades": {
+          "8": 164,
+          "6": 167,
+          "9": 811,
+          "10": 811,
+          "11": 811,
+          "12": 811,
+          "2": 95,
+          "4": 92,
+          "1": 90,
+          "7": 167,
+          "3": 96,
+          "K": 89,
+          "5": 91
+        }
+      },
+      "Arkansas": {
+        "frameworkName": "Arkansas English Language Arts Standards (2023)",
+        "frameworkId": "4c1af78e-e671-5d29-bc0a-97102761a6ab",
+        "totalStandards": 1037,
+        "grades": {
+          "8": 92,
+          "12": 80,
+          "2": 76,
+          "11": 80,
+          "K": 66,
+          "10": 84,
+          "9": 87,
+          "1": 79,
+          "7": 97,
+          "3": 73,
+          "5": 64,
+          "6": 90,
+          "4": 69
+        }
+      },
+      "Colorado": {
+        "frameworkName": "Colorado Academic Standards: Reading, Writing, and Communicating (2020)",
+        "frameworkId": "51e38d07-d8d9-5168-ab5a-b2f4f449b029",
+        "totalStandards": 1223,
+        "grades": {
+          "2": 123,
+          "PK": 36,
+          "11": 99,
+          "12": 99,
+          "K": 106,
+          "1": 118,
+          "5": 118,
+          "7": 95,
+          "6": 98,
+          "4": 114,
+          "8": 97,
+          "9": 99,
+          "10": 99,
+          "3": 120
+        }
+      },
+      "Alaska": {
+        "frameworkName": "Alaska English/Language Arts Standards (2012)",
+        "frameworkId": "58b0fd02-fd40-551a-87ca-1deb66d7e531",
+        "totalStandards": 1099,
+        "grades": {
+          "7": 228,
+          "1": 113,
+          "11": 145,
+          "12": 145,
+          "4": 119,
+          "3": 122,
+          "2": 103,
+          "K": 104,
+          "6": 231,
+          "8": 230,
+          "5": 117,
+          "9": 147,
+          "10": 147
+        }
+      },
+      "Mississippi": {
+        "frameworkName": "Mississippi College and Career Readiness Standards for English Language Arts",
+        "frameworkId": "5916a994-d29a-59b8-ba7c-6dbaa5b41f2b",
+        "totalStandards": 1699,
+        "grades": {
+          "2": 103,
+          "3": 122,
+          "9": 597,
+          "10": 597,
+          "11": 595,
+          "12": 594,
+          "K": 104,
+          "1": 113,
+          "4": 119,
+          "5": 117,
+          "6": 231,
+          "7": 228,
+          "8": 230
+        }
+      },
+      "Washington": {
+        "frameworkName": "Washington State K-12 English Language Arts Learning Standards",
+        "frameworkId": "60910fbc-f947-5aa7-b501-043d4a13488c",
+        "totalStandards": 1100,
+        "grades": {
+          "9": 147,
+          "10": 147,
+          "5": 117,
+          "4": 119,
+          "8": 230,
+          "6": 231,
+          "1": 113,
+          "11": 145,
+          "12": 145,
+          "2": 103,
+          "K": 104,
+          "3": 122,
+          "7": 228
+        }
+      },
+      "Arizona": {
+        "frameworkName": "Arizona English Language Arts Standards (2016)",
+        "frameworkId": "62cbdbe0-aa25-554e-bf27-b719cdb698ec",
+        "totalStandards": 991,
+        "grades": {
+          "K": 114,
+          "7": 108,
+          "11": 106,
+          "12": 106,
+          "5": 124,
+          "4": 125,
+          "6": 111,
+          "2": 134,
+          "1": 140,
+          "9": 107,
+          "10": 107,
+          "3": 133,
+          "8": 109
+        }
+      },
+      "North Carolina": {
+        "frameworkName": "North Carolina Standard Course of Study English Language Arts",
+        "frameworkId": "6e3e0815-ec88-5fd3-80d2-e90d3b972391",
+        "totalStandards": 765,
+        "grades": {
+          "3": 109,
+          "K": 97,
+          "4": 109,
+          "5": 108,
+          "8": 102,
+          "7": 102,
+          "1": 104,
+          "9": 103,
+          "10": 103,
+          "11": 102,
+          "12": 102,
+          "2": 96,
+          "6": 103
+        }
+      },
+      "Wisconsin": {
+        "frameworkName": "Wisconsin Standards for English Language Arts",
+        "frameworkId": "703491cc-2214-550d-9cc6-5eb502d36e6d",
+        "totalStandards": 697,
+        "grades": {
+          "3": 100,
+          "4": 94,
+          "6": 82,
+          "11": 85,
+          "12": 85,
+          "2": 96,
+          "5": 89,
+          "9": 83,
+          "10": 83,
+          "8": 80,
+          "1": 99,
+          "K": 100,
+          "7": 79
+        }
+      }
+    },
+    "Mathematics": {
+      "Kentucky": {
+        "frameworkName": "Kentucky Academic Standards: Mathematics (2019)",
+        "frameworkId": "05f731e2-bd76-5632-9c24-9022fc6e4893",
+        "totalStandards": 730,
+        "grades": {
+          "4": 69,
+          "9": 314,
+          "10": 314,
+          "11": 314,
+          "12": 314,
+          "5": 57,
+          "1": 48,
+          "3": 58,
+          "K": 44,
+          "7": 60,
+          "6": 65,
+          "8": 46,
+          "2": 41
+        }
+      },
+      "Nevada": {
+        "frameworkName": "Nevada Academic Content Standards for Mathematics",
+        "frameworkId": "0b573fdc-184b-5ebc-81b1-dcdb3078a463",
+        "totalStandards": 517,
+        "grades": {
+          "K": 33,
+          "9": 200,
+          "10": 200,
+          "11": 200,
+          "12": 200,
+          "6": 55,
+          "3": 45,
+          "2": 36,
+          "8": 44,
+          "7": 51,
+          "5": 48,
+          "4": 45,
+          "1": 32
+        }
+      },
+      "Michigan": {
+        "frameworkName": "Michigan K-12 Standards Mathematics",
+        "frameworkId": "100073eb-b00c-5a4d-9c31-e55be9a30a60",
+        "totalStandards": 517,
+        "grades": {
+          "9": 200,
+          "10": 200,
+          "11": 200,
+          "12": 200,
+          "4": 45,
+          "2": 36,
+          "3": 45,
+          "7": 51,
+          "6": 55,
+          "5": 48,
+          "K": 33,
+          "1": 32,
+          "8": 44
+        }
+      },
+      "Florida": {
+        "frameworkName": "Mathematics (B.E.S.T.)",
+        "frameworkId": "14f159c1-7521-5a1e-aec3-0fec1c335d95",
+        "totalStandards": 642,
+        "grades": {
+          "7": 41,
+          "9": 344,
+          "10": 344,
+          "11": 344,
+          "12": 344,
+          "8": 47,
+          "K": 29,
+          "2": 34,
+          "5": 43,
+          "3": 41,
+          "4": 46,
+          "6": 47,
+          "1": 33
+        }
+      },
+      "Arkansas": {
+        "frameworkName": "Arkansas Mathematics Standards and Courses (2023)",
+        "frameworkId": "195975ba-7a2f-560f-addf-4392658719cb",
+        "totalStandards": 769,
+        "grades": {
+          "4": 34,
+          "9": 422,
+          "10": 422,
+          "11": 422,
+          "12": 422,
+          "5": 34,
+          "7": 54,
+          "3": 33,
+          "2": 29,
+          "8": 155,
+          "1": 26,
+          "K": 22,
+          "6": 61
+        }
+      },
+      "Vermont": {
+        "frameworkName": "Vermont Common Core for Mathematics",
+        "frameworkId": "1e914238-1abb-5f73-8209-0da0579fade0",
+        "totalStandards": 517,
+        "grades": {
+          "7": 51,
+          "9": 200,
+          "10": 200,
+          "11": 200,
+          "12": 200,
+          "3": 45,
+          "8": 44,
+          "2": 36,
+          "K": 33,
+          "1": 32,
+          "4": 45,
+          "5": 48,
+          "6": 55
+        }
+      },
+      "Connecticut": {
+        "frameworkName": "Connecticut Mathematics Standards",
+        "frameworkId": "2491760b-8f93-5a87-be24-ddbebc654929",
+        "totalStandards": 517,
+        "grades": {
+          "9": 199,
+          "10": 199,
+          "11": 199,
+          "12": 199,
+          "6": 54,
+          "1": 32,
+          "3": 45,
+          "4": 45,
+          "8": 43,
+          "2": 36,
+          "7": 50,
+          "K": 33,
+          "5": 47
+        }
+      },
+      "Oklahoma": {
+        "frameworkName": "Oklahoma Academic Standards for Mathematics 2022",
+        "frameworkId": "24e44be8-6fc8-58a2-90fe-891aed195959",
+        "totalStandards": 655,
+        "grades": {
+          "K": 43,
+          "7": 321,
+          "8": 275,
+          "9": 275,
+          "10": 275,
+          "11": 275,
+          "12": 275,
+          "6": 58,
+          "3": 55,
+          "1": 48,
+          "4": 58,
+          "2": 53,
+          "PK": 30,
+          "5": 45
+        }
+      },
+      "North Dakota": {
+        "frameworkName": "2023 North Dakota Mathematics Content Standards",
+        "frameworkId": "2ad51889-1547-50f9-b00b-0d986503e5c5",
+        "totalStandards": 466,
+        "grades": {
+          "11": 116,
+          "12": 116,
+          "9": 82,
+          "10": 82,
+          "5": 28,
+          "K": 23,
+          "6": 29,
+          "3": 33,
+          "4": 36,
+          "8": 32,
+          "2": 31,
+          "7": 24,
+          "1": 32
+        }
+      },
+      "Colorado": {
+        "frameworkName": "Colorado Academic Standards: Mathematics (2020)",
+        "frameworkId": "2d08331b-3769-5b2b-981c-52b03c5e73d1",
+        "totalStandards": 537,
+        "grades": {
+          "9": 193,
+          "10": 193,
+          "11": 193,
+          "12": 193,
+          "5": 40,
+          "2": 28,
+          "4": 37,
+          "6": 47,
+          "8": 38,
+          "7": 43,
+          "PK": 25,
+          "1": 24,
+          "K": 25,
+          "3": 37
+        }
+      },
+      "Illinois": {
+        "frameworkName": "Illinois Learning Standards (ILS) in Math",
+        "frameworkId": "2d68dd5d-7d90-585a-a0cc-94fa5bd18abe",
+        "totalStandards": 517,
+        "grades": {
+          "9": 200,
+          "10": 200,
+          "11": 200,
+          "12": 200,
+          "7": 51,
+          "8": 44,
+          "4": 45,
+          "3": 45,
+          "6": 55,
+          "1": 32,
+          "K": 33,
+          "2": 36,
+          "5": 48
+        }
+      },
+      "Alaska": {
+        "frameworkName": "Alaska Mathematics Standards",
+        "frameworkId": "2dacd2a1-1119-5fa3-8fcf-0b1f6deaa19e",
+        "totalStandards": 545,
+        "grades": {
+          "9": 200,
+          "10": 200,
+          "11": 200,
+          "12": 200,
+          "2": 37,
+          "4": 48,
+          "7": 52,
+          "K": 37,
+          "3": 47,
+          "5": 51,
+          "8": 45,
+          "1": 42,
+          "6": 58
+        }
+      },
+      "Nebraska": {
+        "frameworkName": "Nebraska\u2019s College and Career Ready Standards for Mathematics 2022",
+        "frameworkId": "4129207b-b6bc-597f-8184-4a00c5fea758",
+        "totalStandards": 500,
+        "grades": {
+          "9": 141,
+          "10": 141,
+          "11": 141,
+          "12": 141,
+          "6": 54,
+          "4": 40,
+          "8": 37,
+          "1": 42,
+          "K": 33,
+          "5": 39,
+          "2": 43,
+          "7": 35,
+          "3": 36
+        }
+      },
+      "West Virginia": {
+        "frameworkName": "West Virginia College- and Career-Readiness Standards for Mathematics (2024)",
+        "frameworkId": "4f534d78-84fe-5f0b-bbf4-97acb1d642b4",
+        "totalStandards": 732,
+        "grades": {
+          "9": 490,
+          "10": 490,
+          "11": 490,
+          "12": 490,
+          "8": 39,
+          "K": 33,
+          "4": 36,
+          "7": 34,
+          "5": 34,
+          "1": 31,
+          "2": 35,
+          "3": 35,
+          "6": 37
+        }
+      },
+      "North Carolina": {
+        "frameworkName": "Mathematics K-12: North Carolina Standard Course of Study (2017)",
+        "frameworkId": "518a3e04-49c9-55be-b62d-42cdd21d5939",
+        "totalStandards": 405,
+        "grades": {
+          "9": 169,
+          "10": 169,
+          "11": 169,
+          "12": 169,
+          "K": 31,
+          "1": 31,
+          "2": 31,
+          "3": 28,
+          "4": 34,
+          "5": 25,
+          "6": 47,
+          "7": 48,
+          "8": 33
+        }
+      },
+      "Washington": {
+        "frameworkName": "Washington State K-12 Mathematics Learning Standards",
+        "frameworkId": "536895e9-66e1-54fe-8db2-828abacd9940",
+        "totalStandards": 517,
+        "grades": {
+          "2": 36,
+          "3": 45,
+          "9": 200,
+          "10": 200,
+          "11": 200,
+          "12": 200,
+          "4": 45,
+          "6": 55,
+          "8": 44,
+          "K": 33,
+          "7": 51,
+          "5": 48,
+          "1": 32
+        }
+      },
+      "Pennsylvania": {
+        "frameworkName": "Pennsylvania Core Math Standards",
+        "frameworkId": "559f947a-e3b1-58bd-b46b-8a9d4e4dfa02",
+        "totalStandards": 167,
+        "grades": {
+          "5": 20,
+          "6": 18,
+          "9": 55,
+          "10": 55,
+          "11": 55,
+          "12": 55,
+          "1": 18,
+          "K": 17,
+          "3": 22,
+          "2": 21,
+          "8": 20,
+          "PK": 16,
+          "4": 23,
+          "7": 17
+        }
+      },
+      "Wisconsin": {
+        "frameworkName": "Wisconsin Standards for Mathematics",
+        "frameworkId": "565c0e50-dca2-5463-950a-665ce0811b33",
+        "totalStandards": 381,
+        "grades": {
+          "3": 24,
+          "7": 24,
+          "9": 152,
+          "10": 152,
+          "11": 152,
+          "12": 152,
+          "K": 23,
+          "8": 28,
+          "1": 20,
+          "6": 29,
+          "4": 29,
+          "2": 26,
+          "5": 26
+        }
+      },
+      "Washington, D.C.": {
+        "frameworkName": "Washington, D.C. Common Core Standards - Mathematics",
+        "frameworkId": "5b7f18fe-bd14-5427-8d35-5d34c3b8f10f",
+        "totalStandards": 517,
+        "grades": {
+          "2": 36,
+          "9": 200,
+          "10": 200,
+          "11": 200,
+          "12": 200,
+          "6": 55,
+          "3": 45,
+          "7": 51,
+          "8": 44,
+          "5": 48,
+          "4": 45,
+          "K": 33,
+          "1": 32
+        }
+      },
+      "Indiana": {
+        "frameworkName": "Indiana Academic Standards for Mathematics (2023)",
+        "frameworkId": "62701d79-9008-5c60-966c-6dc35754fd0b",
+        "totalStandards": 393,
+        "grades": {
+          "3": 33,
+          "7": 33,
+          "4": 34,
+          "9": 121,
+          "10": 121,
+          "11": 121,
+          "12": 121,
+          "2": 29,
+          "K": 24,
+          "5": 32,
+          "8": 29,
+          "1": 24,
+          "6": 34
+        }
+      },
+      "Iowa": {
+        "frameworkName": "Iowa Academic Standards for Mathematics (2024)",
+        "frameworkId": "661e47bb-d471-56b3-936a-f5cc62b605dd",
+        "totalStandards": 620,
+        "grades": {
+          "9": 292,
+          "10": 292,
+          "11": 292,
+          "12": 292,
+          "3": 45,
+          "5": 48,
+          "7": 46,
+          "6": 55,
+          "1": 37,
+          "4": 45,
+          "K": 39,
+          "2": 39,
+          "8": 46
+        }
+      },
+      "Kansas": {
+        "frameworkName": "Kansas Mathematics Standards",
+        "frameworkId": "66443128-dd70-5c57-bbe0-e45cee363495",
+        "totalStandards": 535,
+        "grades": {
+          "3": 46,
+          "6": 58,
+          "11": 156,
+          "2": 38,
+          "7": 56,
+          "5": 47,
+          "9": 176,
+          "10": 176,
+          "12": 113,
+          "8": 43,
+          "4": 40,
+          "K": 34,
+          "1": 36
+        }
+      },
+      "Georgia": {
+        "frameworkName": "Georgia\u2019s K-12 Mathematics Standards (SY2023-2024) ",
+        "frameworkId": "664ca2e4-44a5-5433-9789-4e30d3c873b7",
+        "totalStandards": 1583,
+        "grades": {
+          "6": 55,
+          "9": 1127,
+          "10": 1127,
+          "11": 1127,
+          "12": 1127,
+          "K": 39,
+          "1": 37,
+          "5": 42,
+          "4": 47,
+          "8": 96,
+          "7": 56,
+          "3": 46,
+          "2": 38
+        }
+      },
+      "Multi-State": {
+        "frameworkName": "Common Core State Standards for Math",
+        "frameworkId": "6becf2d7-2232-5ead-983f-9f0a4de24ab7",
+        "totalStandards": 597,
+        "grades": {
+          "4": 53,
+          "8": 52,
+          "9": 208,
+          "10": 208,
+          "11": 208,
+          "12": 208,
+          "7": 59,
+          "5": 56,
+          "K": 41,
+          "6": 63,
+          "1": 40,
+          "2": 44,
+          "3": 53
+        }
+      },
+      "New Hampshire": {
+        "frameworkName": "New Hampshire K-12 Mathematics Standards",
+        "frameworkId": "6c1cda3a-4ec6-5957-b1c5-e23a122642fe",
+        "totalStandards": 517,
+        "grades": {
+          "9": 200,
+          "10": 200,
+          "11": 200,
+          "12": 200,
+          "2": 36,
+          "6": 55,
+          "3": 45,
+          "4": 45,
+          "5": 48,
+          "1": 32,
+          "8": 44,
+          "7": 51,
+          "K": 33
+        }
+      },
+      "Louisiana": {
+        "frameworkName": "Louisiana Student Standards for Mathematics",
+        "frameworkId": "73a2a5f9-dc8e-5a7b-b378-63dcf9ebf1b5",
+        "totalStandards": 509,
+        "grades": {
+          "5": 54,
+          "4": 51,
+          "1": 35,
+          "K": 40,
+          "2": 36,
+          "3": 48,
+          "6": 55,
+          "7": 51,
+          "8": 44,
+          "9": 167,
+          "10": 167,
+          "11": 167,
+          "12": 167
+        }
+      }
+    },
+    "Science": {
+      "Rhode Island": {
+        "frameworkName": "Rhode Island Next Generation Science Standards",
+        "frameworkId": "08c67c46-744e-5dde-98c2-d6aa0bcf8ed1",
+        "totalStandards": 765,
+        "grades": {
+          "6": 234,
+          "7": 234,
+          "8": 234,
+          "9": 258,
+          "10": 258,
+          "11": 258,
+          "12": 258,
+          "3": 143,
+          "4": 142,
+          "5": 141,
+          "K": 106,
+          "1": 106,
+          "2": 108
+        }
+      },
+      "Washington, D.C.": {
+        "frameworkName": "Washington, D.C. Next Generation Science Standards",
+        "frameworkId": "08d519dd-f0cb-575e-83bb-8e990f9d916f",
+        "totalStandards": 471,
+        "grades": {
+          "9": 151,
+          "10": 151,
+          "11": 151,
+          "12": 151,
+          "2": 62,
+          "1": 60,
+          "K": 61,
+          "6": 136,
+          "7": 136,
+          "8": 136,
+          "3": 76,
+          "4": 75,
+          "5": 74
+        }
+      },
+      "Michigan": {
+        "frameworkName": "Michigan Science Standards",
+        "frameworkId": "106d18d2-7457-505c-ba2b-2f29a02b437f",
+        "totalStandards": 235,
+        "grades": {
+          "9": 79,
+          "10": 79,
+          "11": 79,
+          "12": 79,
+          "K": 21,
+          "1": 20,
+          "2": 24,
+          "3": 26,
+          "4": 27,
+          "5": 26,
+          "6": 68,
+          "7": 68,
+          "8": 68
+        }
+      },
+      "Kentucky": {
+        "frameworkName": "Kentucky Academic Standards: Science (2022)",
+        "frameworkId": "10908932-cee3-5a60-af44-21ccae5a8600",
+        "totalStandards": 763,
+        "grades": {
+          "9": 257,
+          "10": 257,
+          "11": 257,
+          "12": 257,
+          "3": 140,
+          "4": 141,
+          "5": 139,
+          "6": 198,
+          "7": 200,
+          "8": 200,
+          "2": 107,
+          "K": 105,
+          "1": 105
+        }
+      },
+      "Maryland": {
+        "frameworkName": "Maryland Science Standards",
+        "frameworkId": "1d5d19ac-f07a-5c99-a25b-14460d6d25a4",
+        "totalStandards": 764,
+        "grades": {
+          "9": 258,
+          "10": 258,
+          "11": 258,
+          "12": 258,
+          "3": 143,
+          "4": 142,
+          "5": 141,
+          "K": 105,
+          "1": 105,
+          "2": 107,
+          "6": 234,
+          "7": 234,
+          "8": 234
+        }
+      },
+      "Alabama": {
+        "frameworkName": "Science (2023)",
+        "frameworkId": "1fa3814f-f108-58ec-a2ce-6557112e0278",
+        "totalStandards": 398,
+        "grades": {
+          "9": 242,
+          "10": 242,
+          "11": 242,
+          "12": 242,
+          "3": 15,
+          "7": 24,
+          "2": 11,
+          "1": 9,
+          "5": 15,
+          "8": 25,
+          "K": 11,
+          "4": 17,
+          "6": 29
+        }
+      },
+      "New York": {
+        "frameworkName": "New York State P-12 Science Learning Standards",
+        "frameworkId": "212ef679-84a2-57e0-bbf2-6ce9e61a53db",
+        "totalStandards": 799,
+        "grades": {
+          "6": 237,
+          "7": 237,
+          "8": 237,
+          "9": 266,
+          "10": 266,
+          "11": 266,
+          "12": 266,
+          "3": 144,
+          "4": 142,
+          "5": 141,
+          "K": 107,
+          "1": 106,
+          "2": 108,
+          "PK": 9
+        }
+      },
+      "Missouri": {
+        "frameworkName": "Missouri Learning Standards: Science",
+        "frameworkId": "22289246-0bc4-5b18-a415-48f63dfd1812",
+        "totalStandards": 771,
+        "grades": {
+          "3": 139,
+          "4": 143,
+          "5": 144,
+          "9": 258,
+          "10": 258,
+          "11": 258,
+          "12": 258,
+          "6": 229,
+          "7": 229,
+          "8": 229,
+          "K": 108,
+          "1": 105,
+          "2": 107
+        }
+      },
+      "Nebraska": {
+        "frameworkName": "Nebraska's College and Career Ready Standards for Science 2017",
+        "frameworkId": "2285de6d-451a-5d33-b85d-d424e9e44ca1",
+        "totalStandards": 969,
+        "grades": {
+          "6": 196,
+          "7": 203,
+          "8": 203,
+          "9": 422,
+          "10": 422,
+          "11": 422,
+          "12": 422,
+          "K": 107,
+          "1": 107,
+          "2": 109,
+          "3": 145,
+          "4": 144,
+          "5": 144
+        }
+      },
+      "Colorado": {
+        "frameworkName": "Colorado Academic Standards for Science",
+        "frameworkId": "24f62176-bcdd-5ef7-b945-d22e247fe826",
+        "totalStandards": 802,
+        "grades": {
+          "PK": 29,
+          "9": 254,
+          "10": 254,
+          "11": 254,
+          "12": 254,
+          "2": 47,
+          "6": 175,
+          "7": 175,
+          "8": 175,
+          "3": 72,
+          "4": 86,
+          "5": 89,
+          "1": 37,
+          "K": 49
+        }
+      },
+      "New Jersey": {
+        "frameworkName": "2020 New Jersey Student Learning Standards: Science K-12",
+        "frameworkId": "2ae02d47-c355-5797-b609-0807fa760868",
+        "totalStandards": 777,
+        "grades": {
+          "6": 234,
+          "7": 234,
+          "8": 234,
+          "9": 258,
+          "10": 258,
+          "11": 258,
+          "12": 258,
+          "3": 143,
+          "4": 142,
+          "5": 141,
+          "K": 106,
+          "1": 106,
+          "2": 108
+        }
+      },
+      "Alaska": {
+        "frameworkName": "Alaska K-12 Science Standards (2019)",
+        "frameworkId": "2f0187f7-c97c-5e81-b040-371d37028334",
+        "totalStandards": 765,
+        "grades": {
+          "6": 234,
+          "7": 234,
+          "8": 234,
+          "K": 106,
+          "1": 106,
+          "2": 108,
+          "9": 258,
+          "10": 258,
+          "11": 258,
+          "12": 258,
+          "5": 141,
+          "3": 143,
+          "4": 142
+        }
+      },
+      "West Virginia": {
+        "frameworkName": "West Virginia College- and Career-Readiness Standards for Science",
+        "frameworkId": "36688ff1-6ffd-519f-b7f9-eae23b136b73",
+        "totalStandards": 494,
+        "grades": {
+          "9": 265,
+          "10": 265,
+          "11": 265,
+          "12": 265,
+          "6": 54,
+          "7": 57,
+          "8": 50,
+          "3": 46,
+          "4": 46,
+          "5": 39,
+          "K": 42,
+          "1": 41,
+          "2": 42
+        }
+      },
+      "Washington": {
+        "frameworkName": "Washington State K-12 Science Learning Standards",
+        "frameworkId": "3950939e-bc62-5cf9-85fd-306d9aa0bce6",
+        "totalStandards": 765,
+        "grades": {
+          "9": 258,
+          "10": 258,
+          "11": 258,
+          "12": 258,
+          "1": 106,
+          "6": 234,
+          "7": 234,
+          "8": 234,
+          "3": 143,
+          "4": 142,
+          "5": 141,
+          "K": 106,
+          "2": 108
+        }
+      },
+      "Arizona": {
+        "frameworkName": "Arizona Science Standards (2018)",
+        "frameworkId": "3afb4916-132f-5765-a1f3-6ac48cf28804",
+        "totalStandards": 442,
+        "grades": {
+          "6": 107,
+          "7": 105,
+          "8": 105,
+          "K": 70,
+          "1": 74,
+          "2": 73,
+          "9": 169,
+          "10": 169,
+          "11": 169,
+          "12": 169,
+          "3": 90,
+          "4": 93,
+          "5": 94
+        }
+      },
+      "Oklahoma": {
+        "frameworkName": "Oklahoma Academic Standards for Science 2020",
+        "frameworkId": "3ea5085a-ae87-5721-8d00-7d1433f071f2",
+        "totalStandards": 916,
+        "grades": {
+          "9": 321,
+          "10": 321,
+          "11": 321,
+          "12": 321,
+          "6": 220,
+          "7": 223,
+          "8": 224,
+          "K": 282,
+          "1": 283,
+          "2": 284,
+          "4": 93,
+          "3": 94,
+          "5": 93,
+          "PK": 6
+        }
+      },
+      "California": {
+        "frameworkName": "California Next Generation Science Standards",
+        "frameworkId": "406eb03f-c45e-5440-b013-cbf078bd6cc8",
+        "totalStandards": 852,
+        "grades": {
+          "9": 258,
+          "10": 258,
+          "11": 258,
+          "12": 258,
+          "1": 106,
+          "7": 222,
+          "6": 213,
+          "8": 224,
+          "3": 143,
+          "4": 142,
+          "5": 141,
+          "K": 106,
+          "2": 108
+        }
+      },
+      "Wyoming": {
+        "frameworkName": "Wyoming Science Content & Performance Standards 2021",
+        "frameworkId": "41a7230c-3f70-56ef-837a-f08b07e3043c",
+        "totalStandards": 663,
+        "grades": {
+          "4": 126,
+          "6": 188,
+          "7": 188,
+          "8": 188,
+          "3": 127,
+          "5": 125,
+          "9": 201,
+          "10": 201,
+          "11": 201,
+          "12": 201,
+          "K": 111,
+          "1": 111,
+          "2": 113
+        }
+      },
+      "Illinois": {
+        "frameworkName": "Illinois Learning Standards (ILS) for Science",
+        "frameworkId": "41cff25c-d6cd-542f-b60d-0697f6d96840",
+        "totalStandards": 1509,
+        "grades": {
+          "6": 446,
+          "7": 446,
+          "8": 446,
+          "K": 152,
+          "1": 140,
+          "2": 149,
+          "9": 529,
+          "10": 529,
+          "11": 529,
+          "12": 529,
+          "4": 196,
+          "3": 194,
+          "5": 186
+        }
+      },
+      "Arkansas": {
+        "frameworkName": "Arkansas K-12 Science Standards",
+        "frameworkId": "43ae286d-8592-5144-89be-3bb7f665e354",
+        "totalStandards": 1182,
+        "grades": {
+          "9": 757,
+          "10": 757,
+          "11": 757,
+          "12": 757,
+          "1": 32,
+          "6": 58,
+          "7": 70,
+          "5": 39,
+          "K": 35,
+          "4": 51,
+          "2": 37,
+          "3": 46,
+          "8": 63
+        }
+      },
+      "Tennessee": {
+        "frameworkName": "Tennessee Academic Standards for Science",
+        "frameworkId": "45a02273-a778-58ff-bd8a-1b6026ad6a2c",
+        "totalStandards": 636,
+        "grades": {
+          "2": 33,
+          "6": 32,
+          "9": 438,
+          "10": 438,
+          "11": 438,
+          "12": 438,
+          "3": 31,
+          "7": 30,
+          "5": 35,
+          "K": 23,
+          "4": 32,
+          "8": 32,
+          "1": 22
+        }
+      },
+      "Kansas": {
+        "frameworkName": "Kansas Science Standards",
+        "frameworkId": "47fd05e7-58b4-50a3-86af-47c676accdc3",
+        "totalStandards": 765,
+        "grades": {
+          "9": 258,
+          "10": 258,
+          "11": 258,
+          "12": 258,
+          "6": 234,
+          "7": 234,
+          "8": 234,
+          "K": 106,
+          "1": 106,
+          "2": 108,
+          "3": 143,
+          "4": 142,
+          "5": 141
+        }
+      },
+      "Hawaii": {
+        "frameworkName": "Hawai'i Next Generation Science Standards",
+        "frameworkId": "4f80e360-a4bd-5dc3-b621-2e01974de834",
+        "totalStandards": 765,
+        "grades": {
+          "9": 258,
+          "10": 258,
+          "11": 258,
+          "12": 258,
+          "6": 234,
+          "7": 234,
+          "8": 234,
+          "3": 143,
+          "4": 142,
+          "5": 141,
+          "K": 106,
+          "1": 106,
+          "2": 108
+        }
+      },
+      "Nevada": {
+        "frameworkName": "Nevada Academic Content Standards for Science",
+        "frameworkId": "573f9df2-263b-569f-9704-5a5278e2c7ec",
+        "totalStandards": 765,
+        "grades": {
+          "6": 234,
+          "7": 234,
+          "8": 234,
+          "9": 258,
+          "10": 258,
+          "11": 258,
+          "12": 258,
+          "3": 143,
+          "4": 142,
+          "5": 141,
+          "K": 106,
+          "1": 106,
+          "2": 108
+        }
+      },
+      "Maine": {
+        "frameworkName": "Maine Science Standards",
+        "frameworkId": "5bd121aa-f8ec-5d32-a2b0-0c6ce04db4bc",
+        "totalStandards": 479,
+        "grades": {
+          "6": 144,
+          "7": 144,
+          "8": 144,
+          "3": 84,
+          "9": 159,
+          "10": 159,
+          "11": 159,
+          "12": 159,
+          "4": 83,
+          "5": 82,
+          "K": 68,
+          "1": 68,
+          "2": 70
+        }
+      },
+      "Ohio": {
+        "frameworkName": "Ohio Learning Standards for Science",
+        "frameworkId": "67932799-dfad-5782-a5bc-9ca29d4e99d5",
+        "totalStandards": 189,
+        "grades": {
+          "9": 115,
+          "10": 115,
+          "11": 115,
+          "12": 115,
+          "2": 6,
+          "4": 7,
+          "3": 9,
+          "6": 13,
+          "7": 11,
+          "1": 6,
+          "K": 6,
+          "8": 9,
+          "5": 7
+        }
+      },
+      "North Dakota": {
+        "frameworkName": "North Dakota Science Content Standards",
+        "frameworkId": "6804d508-c560-5ec3-a789-e74412de809e",
+        "totalStandards": 517,
+        "grades": {
+          "5": 38,
+          "6": 139,
+          "7": 139,
+          "8": 139,
+          "9": 191,
+          "10": 191,
+          "11": 191,
+          "12": 191,
+          "1": 32,
+          "4": 43,
+          "3": 42,
+          "K": 41,
+          "2": 37
+        }
+      },
+      "Montana": {
+        "frameworkName": "Montana Science Content Standards 2016",
+        "frameworkId": "7077933d-84a6-5aa5-8ba4-ad421b705135",
+        "totalStandards": 194,
+        "grades": {
+          "2": 20,
+          "9": 70,
+          "10": 70,
+          "11": 70,
+          "12": 70,
+          "6": 61,
+          "7": 61,
+          "8": 61,
+          "K": 19,
+          "1": 18,
+          "3": 24,
+          "4": 23,
+          "5": 22
+        }
+      }
+    }
+  }
+}

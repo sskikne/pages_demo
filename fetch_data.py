@@ -65,12 +65,22 @@ def fetch_all_standards(framework_uuid):
 
 def main():
     print("Fetching standards frameworks...")
-    frameworks_resp = api_get('/standards-frameworks')
-    if not frameworks_resp:
-        print("Failed to fetch frameworks", file=sys.stderr)
-        sys.exit(1)
-
-    frameworks = frameworks_resp['data']
+    frameworks = []
+    cursor = None
+    while True:
+        params = {'limit': 1000}
+        if cursor:
+            params['cursor'] = cursor
+        frameworks_resp = api_get('/standards-frameworks', params)
+        if not frameworks_resp:
+            print("Failed to fetch frameworks", file=sys.stderr)
+            sys.exit(1)
+        frameworks.extend(frameworks_resp['data'])
+        pagination = frameworks_resp.get('pagination', {})
+        if pagination.get('hasMore') and pagination.get('nextCursor'):
+            cursor = pagination['nextCursor']
+        else:
+            break
     print(f"Found {len(frameworks)} frameworks")
 
     # Build coverage data: subject -> jurisdiction -> grade -> count

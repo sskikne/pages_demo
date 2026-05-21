@@ -172,11 +172,6 @@
             z-index: 3;
         }
 
-        thead th:nth-child(2) {
-            text-align: left;
-            min-width: 80px;
-        }
-
         tbody tr {
             transition: background 0.1s;
         }
@@ -206,41 +201,6 @@
 
         tbody tr:hover td:first-child {
             background: var(--surface-hover);
-        }
-
-        td:nth-child(2) {
-            text-align: left;
-        }
-
-        .coverage-bar-cell {
-            min-width: 100px;
-        }
-
-        .coverage-bar-wrap {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .coverage-bar {
-            flex: 1;
-            height: 6px;
-            background: var(--border);
-            border-radius: 3px;
-            overflow: hidden;
-        }
-
-        .coverage-bar-fill {
-            height: 100%;
-            border-radius: 3px;
-            transition: width 0.3s ease;
-        }
-
-        .coverage-pct {
-            font-size: 12px;
-            font-weight: 600;
-            min-width: 36px;
-            text-align: right;
         }
 
         .cell-has {
@@ -324,7 +284,7 @@
         </div>
         <div class="controls">
             <div class="tab-group" id="subject-tabs"></div>
-            <button class="sort-btn" id="sort-toggle" title="Sort by coverage">Sort: A-Z</button>
+            <button class="sort-btn" id="sort-toggle" title="Sort order">Sort: A-Z</button>
         </div>
     </div>
 
@@ -383,10 +343,10 @@
     }
 
     function toggleSort() {
-        sortMode = sortMode === 'alpha' ? 'coverage' : 'alpha';
+        sortMode = sortMode === 'alpha' ? 'standards' : 'alpha';
         const btn = document.getElementById('sort-toggle');
-        btn.textContent = sortMode === 'alpha' ? 'Sort: A-Z' : 'Sort: Coverage';
-        btn.classList.toggle('active', sortMode === 'coverage');
+        btn.textContent = sortMode === 'alpha' ? 'Sort: A-Z' : 'Sort: Total Standards';
+        btn.classList.toggle('active', sortMode === 'standards');
         render();
     }
 
@@ -397,9 +357,7 @@
         // Build rows data
         let rows = Object.entries(coverage).map(([state, info]) => {
             const gradeCoverage = grades.map(g => info.grades[g] || 0);
-            const coveredCount = gradeCoverage.filter(c => c > 0).length;
-            const coveragePct = Math.round((coveredCount / grades.length) * 100);
-            return { state, info, gradeCoverage, coveredCount, coveragePct };
+            return { state, info, gradeCoverage };
         });
 
         // All possible states (from any subject)
@@ -415,15 +373,13 @@
                     state: s,
                     info: { frameworkName: 'No framework', totalStandards: 0, grades: {} },
                     gradeCoverage: grades.map(() => 0),
-                    coveredCount: 0,
-                    coveragePct: 0,
                 });
             }
         });
 
         // Sort
-        if (sortMode === 'coverage') {
-            rows.sort((a, b) => b.coveragePct - a.coveragePct || a.state.localeCompare(b.state));
+        if (sortMode === 'standards') {
+            rows.sort((a, b) => b.info.totalStandards - a.info.totalStandards || a.state.localeCompare(b.state));
         } else {
             rows.sort((a, b) => a.state.localeCompare(b.state));
         }
@@ -434,11 +390,8 @@
         if (multiState) rows.unshift(multiState);
 
         // Stats
-        const withCoverage = rows.filter(r => r.coveragePct > 0).length;
+        const withCoverage = rows.filter(r => r.info.totalStandards > 0).length;
         const totalStandards = rows.reduce((sum, r) => sum + r.info.totalStandards, 0);
-        const avgCoverage = rows.length > 0
-            ? Math.round(rows.reduce((sum, r) => sum + r.coveragePct, 0) / rows.length)
-            : 0;
 
         document.getElementById('stats').innerHTML = `
             <div class="stat">
@@ -457,17 +410,12 @@
                 <div class="stat-value">${totalStandards.toLocaleString()}</div>
                 <div class="stat-label">Total Standards</div>
             </div>
-            <div class="stat">
-                <div class="stat-value">${avgCoverage}%</div>
-                <div class="stat-label">Avg Grade Coverage</div>
-            </div>
         `;
 
         // Table header
         document.getElementById('thead').innerHTML = `
             <tr>
                 <th>State</th>
-                <th>Coverage</th>
                 ${grades.map(g => `<th>${g}</th>`).join('')}
             </tr>
         `;
@@ -475,22 +423,10 @@
         // Table body
         const tbody = document.getElementById('tbody');
         tbody.innerHTML = rows.map(row => {
-            const barColor = row.coveragePct === 100 ? 'var(--green)'
-                : row.coveragePct > 0 ? 'var(--accent)'
-                : 'var(--red)';
-
             return `<tr>
                 <td>
                     <div>${row.state}</div>
                     <div class="framework-name" title="${escapeHtml(row.info.frameworkName)}">${escapeHtml(row.info.frameworkName)}</div>
-                </td>
-                <td class="coverage-bar-cell">
-                    <div class="coverage-bar-wrap">
-                        <div class="coverage-bar">
-                            <div class="coverage-bar-fill" style="width:${row.coveragePct}%;background:${barColor}"></div>
-                        </div>
-                        <span class="coverage-pct" style="color:${barColor}">${row.coveragePct}%</span>
-                    </div>
                 </td>
                 ${row.gradeCoverage.map((count, i) => {
                     if (count > 0) {
